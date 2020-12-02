@@ -68,7 +68,7 @@ small {
 .letter {
     margin: 50px auto;
     width: 50%;
-    min-width: 400px;
+    min-width: 300px;
     min-height: 150px;
     padding: 40px;
     position: relative;

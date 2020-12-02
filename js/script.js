@@ -22,12 +22,22 @@ function stopIntervalForLetter() {
 }
 
 function go() {
-    if ($('#firstMsg').val() === '24.10.2020') {
-        $("#letter").removeClass("invisible")
-        $("#danger-msg").addClass("invisible")
-        startIntervalForLetter();
+    let arr = $('#firstMsg').val().split('.');
+
+    if(arr.length === 3 && typeof (+arr[0]) === "number" && typeof (+arr[1]) === "number" && typeof (+arr[2]) === "number") {
+        if($('#firstMsg').val() === '24.10.2020') {
+            $("#letter").removeClass("invisible");
+            $("#danger-msg").addClass("invisible");
+            $("#warn-danger-msg").addClass("invisible");
+            startIntervalForLetter();
+        } else {
+            $("#letter").addClass("invisible");
+            $("#warn-danger-msg").removeClass("invisible");
+            $("#danger-msg").addClass("invisible");
+        }
     } else {
-        $("#letter").addClass("invisible")
+        $("#letter").addClass("invisible");
         $("#danger-msg").removeClass("invisible")
+        $("#warn-danger-msg").addClass("invisible");
     }
 }
