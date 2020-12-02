@@ -1,0 +1,121 @@
+.letter p {
+    margin: 30px;
+    color: #aaa;
+    outline: none;
+}
+
+body {
+    background: #fdedb9;
+}
+
+span {
+    -webkit-animation: letter .2s ease-in;
+    -moz-animation: letter .2s ease-in;
+    -o-animation: letter .2s ease-in;
+    animation: letter .2s ease-in;
+    display: inline-block;
+    transition: 1s opacity, 1s visibility;
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    color: #0600b2;
+}
+
+@-webkit-keyframes letter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes letter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes letter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+small {
+    display: block;
+    margin-bottom: 25px;
+}
+
+@keyframes letter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.letter {
+    margin: 50px auto;
+    width: 50%;
+    min-width: 400px;
+    min-height: 150px;
+    padding: 40px;
+    position: relative;
+    background: #fff;
+    background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#fff), to(#f3f3f3), color-stop(.1, #fff));
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.letter:before, .letter:after {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), color-stop(.1, rgba(0, 0, 0, 0.2)));
+    border-left: 1px dashed rgba(0, 0, 0, 0.1);
+    border-right: 1px dashed rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(50px, -20px) skew(10deg, 10deg) rotate(-50deg);
+    -moz-transform: translate(50px, -20px) skew(10deg, 10deg) rotate(-50deg);
+    -o-transform: translate(50px, -20px) skew(10deg, 10deg) rotate(-50deg);
+    transform: translate(50px, -20px) skew(10deg, 10deg) rotate(-50deg)
+}
+
+.letter:before {
+    top: 26px;
+    left: -95px;
+}
+
+.letter:after {
+    right: 0;
+    bottom: 0;
+}
+
+.invisible {
+    display: none
+}
+
+.container {
+    max-width: 550px;
+}
+
+
